@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+</head>
+<body bgcolor="Cyan">
+<h1> <center>Post On Wall</center></h1><hr>
+<center>
+ <form method="POST" action="" enctype="multipart/form-data"> </form>
+
+        {% csrf_token %}
+
+        {{ form.as_p }}
+        <!--<div>
+            <label for="image">Image: </label>
+            <input id="image" type="file" name="image" accept="image/*" value={{ image }}>
+        </div>
+        <div>
+            <label for="caption">Caption: </label>
+            <input id="caption" type="text" name="image" value={{ caption }}>
+        </div>-->
+
+       <center> <input type="submit" class="btn btn-default" value="Post">
+        </center>
+    </form>
+</center>
+</body>
+</html>
